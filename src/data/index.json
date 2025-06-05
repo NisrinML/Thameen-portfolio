@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Wordpress",
+      "description": "Custom theme & plugin development, WooCommerce integration, responsive design and performance optimization, and security hardening for scalable, SEO-friendly websites."
+    },
+    {
+      "id": "2",
+      "src": "./img/tag-1.png",
+      "title": "QA",
+      "description": "Ensure software quality through systematic testing—identifying bugs, improving performance, and safeguarding user experience before release."
+    },
+    {
+      "id": "3",
+      "src": "./img/feather-pen-2.png",
+      "title": "UI & UX Design",
+      "description": "User-centered interfaces, wireframing & prototyping. Focus on usability, accessibility & clean aesthetics."
+    },
+    {
+      "id": "4",
+      "src": "./img/feather-pen-1.png",
+      "title": "Webflow Development",
+      "description": "Custom, responsive websites with clean code, CMS integration, and dynamic interactions—built visually in Webflow."
+    }
+  ],
+  "portfolio": [
+      {
+      "id": "1",
+      "src": "./img/memary.png",
+      "title": "Memari",
+      "description": "WordPress site built with Elementor & Royal Addons, featuring responsive Figma design. Used CPT UI + ACF for dynamic content, MetForms for forms, and Polylang for multilingual support.",
+      "link": "Private for HNNDES",
+      "path":"private"
+    },
+    {
+      "id": "2",
+      "src": "./img/tagespflege.png",
+      "title": "Tagespflege St. Agnes GmbH",
+      "description": "WordPress site for Seligenstadt elderly day care (2026) built with Elementor PRO, MetForm, and CCM19 for GDPR compliance.",
+      "link": "Private for HNNDES",
+      "path":"private"
+    },
+    {
+      "id": "3",
+      "src": "./img/nice-move.png",
+      "title": "Nice Move",
+      "description": "Built a clean, responsive website for Nice Move using Webflow. Utilized its visual designer for pixel-perfect layouts, responsive controls for all devices, CMS for easy content updates, and interactions to enhance user experience. The site is fast, secure, and SEO-friendly.",
+      "link": "Private for HNNDES",
+      "path":"private"
+    },
+    {
+      "id": "4",
+      "src": "./img/smart-wave.png",
+      "title": "Smart Wave",
+      "description": "Built Smartwave's responsive website with Webflow, featuring pixel-perfect design, smooth animations, and intuitive CMS for optimal cross-device UX.",
+      "link": "Private for HNNDES",
+      "path":"private"
+    },
+    {
+      "id": "5",
+      "src": "./img/mobiler.png",
+      "title": "Mobiler Pflegedienst St. Agnes",
+      "description": "Built a WordPress site for Mobiler Pflegedienst St. Agnes (German mobile nursing/day care) using Elementor, MetForm, and GDPR/security plugins. Showcases services and 2026 facility launch.",
+      "link": "Private for HNNDES",
+      "path":"private"
+    }, 
+    {
+      "id": "6",
+      "src": "./img/older-care.png",
+      "title": "Kahlgrunder Pflegedienst GmbH",
+      "description": "Built with Elementor for responsive design, MetForm for contact forms, and Complianz/CCM19 for GDPR compliance. Secured with Really Simple SSL for safe browsing.",
+      "link": "Private for HNNDES",
+      "path":"private"
+    },
+    {
+      "id": "7",
+      "src": "./img/beam-pro.png",
+      "title": "Beam Pro",
+      "description": "WordPress site built with Elementor & Royal Addons, featuring responsive Figma design. Used CPT UI + ACF for dynamic content, MetForms for forms, and MetTranslate for translation.",
+      "link": "Visit Website",
+      "path":"https://beam-pro.net/"
+    }
+  
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Dianne Russel",
+      "author_designation": "Starbucks"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kristin Watson",
+      "author_designation": "Louis Vuitton"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kathryn Murphy",
+      "author_designation": "McDonald's"
+    }
+  ]
+}
