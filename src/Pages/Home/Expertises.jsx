@@ -28,7 +28,7 @@ export default function Expertises() {
       </motion.div>
       <motion.div className="portfolio--section--container" variants={variants}>
         {data?.testimonial?.map((item, index) => (
-          <div key={index} className="testimonial--section--card">
+          <motion.div key={index} className="testimonial--section--card" variants={variants}>
             {/* <div className="testimonial--section--card--review">
               {Array.from({ length: 5 }, (reviews, index) => (
                 <svg
@@ -48,16 +48,20 @@ export default function Expertises() {
             <p className="text-md">{item.description}</p>
             <div className="testimonial--section--card--author--detail">
               <img src={item.src} alt="Avatar" />
-              <div>
+              <div className="testimonial--section--card--content">
                 <p className="text-md testimonial--author--name">
                   {item.author_name}
                 </p>
                 <p className="text-md testimonial--author--designation">
                   {item.author_designation}
                 </p>
+                <a href={item.url} target="_blank" className="testimonial--author--url">Visit Us
+
+               
+                </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </motion.section>

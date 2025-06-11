@@ -89,25 +89,37 @@
       "id": "1",
       "count": "5",
       "src": "./img/image-1.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "During his employment at HNNDES, Thameen Kronfli was responsible for the following job duties:Developing and customizing WordPress themes and plugins to meet client requirements.Conducting thorough Quality Assurance (QA) testing, including functional, usability, and performance testing.Implementing best practices for SEO, website speed optimization, and accessibility.He is a sincere, honest, hardworking, dedicated employee with a professional attitude and very good job knowledge.",
       "author_name": "Hnndes",
-      "author_designation": "Software company"
+      "author_designation": "Software company",
+      "url":"https://www.hnndes.com/"
     },
     {
       "id": "2",
       "count": "5",
-      "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "./img/image-2.png",
+      "description": "Throughout his tenure with us, Thameen has proven to be an outstanding professional in his field. His exceptional attention to detail, accuracy, and efficiency in handling data have significantly contributed to the success of our project. His ability to manage large volumes of information while ensuring precision has been truly commendable. Moreover, Thameen has exhibited excellent teamwork and collaboration skills. He has always been highly cooperative, supportive, and eager to assist his colleagues, making him an invaluable member of our organization. His dedication and commitment to the project's objectives have greatly enhanced our ability to serve the community effectively.",
       "author_name": "Al-Rajaa",
-      "author_designation": "Community organization"
+      "author_designation": "Community organization",
+      "url":"https://www.facebook.com/profile.php?id=61560859229738"
     },
     {
       "id": "3",
       "count": "5",
       "src": "./img/image-3.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "During his time with us, Thameen consistently demonstrated a high level of professionalism, dedication, and initiative. As a Promoter, he showed excellent communication skills and a strong ability to engage customers, helping to significantly boost our product visibility and customer satisfaction. Due to his outstanding performance, he was quickly promoted to the role of Supervisor, where he effectively led his team, managed operations, and maintained a positive work environment.Thameen’s reliability, leadership, and strong work ethic made him a valuable asset to our team. He consistently met and exceeded expectations, and his contributions played an important role in achieving our departmental goals.",
       "author_name": "MTN",
-      "author_designation": "Mobile telecommunications company"
+      "author_designation": "Mobile telecommunications company",
+      "url":"https://www.mtnsyr.com/home"
+    },
+    {
+      "id": "4",
+      "count": "5",
+      "src": "./img/image-4.png",
+      "description": "A devoted member of our church and an individual of outstanding character and integrity. Thameen has been an active and committed servant within our community, demonstrating exceptional leadership as the head of the church's scouting group. His dedication to guiding and mentoring young scouts reflects his strong moral values, sense of responsibility, and ability to inspire.",
+      "author_name": "Scout of Saint Anthony the Great Church",
+      "author_designation": "Scout and Ceremonial Band",
+      "url":"https://www.facebook.com/profile.php?id=100083450886503&sk=about"
     }
   ],
   "about":[

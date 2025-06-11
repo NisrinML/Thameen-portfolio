@@ -18,12 +18,12 @@ const variants = {
 }
   const ref = useRef()
   const [about,setAbout]=useState(data.about[0])
-  var currentIndex=-1;
+ const [currentIndex, setCurrentIndex] = useState(0);
   const getNextValue=(array)=> {
   if (array.length === 0) return null; 
-  currentIndex = (currentIndex + 1) % array.length;
-  setAbout(array[currentIndex]);
-  console.log(currentIndex)
+    const nextIndex = (currentIndex + 1) % array.length; 
+    setCurrentIndex(nextIndex); 
+    setAbout(array[nextIndex]); 
 }
   return (
     <motion.section id="AboutMe" className="about--section" 

@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 h1,
@@ -316,7 +317,7 @@ h2 {
   flex: 1 0 0;
   border-radius: 10.6px;
   background: var(--bg-card);
-  min-height: 250px;
+  height: 85%;
 }
 
 .skills--section--card:hover {
@@ -435,7 +436,7 @@ cursor: pointer;
   cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  min-height: 41rem;
+  height: 100%;
 }
 
 .portfolio--section--card--content {
@@ -498,6 +499,12 @@ cursor: pointer;
   flex: 1 0 0;
   border-radius: 8px;
   border: 1.33px solid #006b6a;
+  height: 85%;
+}
+.testimonial--section--card--content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .testimonial--section--card--reviews {
@@ -523,7 +530,19 @@ cursor: pointer;
   font-weight: 400;
   line-height: 150%;
 }
+.testimonial--author--url{
 
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1.33px solid var(--primary);
+width: fit-content;
+padding-right:0.5rem;
+  color: var(--heading-color);
+
+}
+.testimonial--author--url:hover {
+  color: var(--primary);
+}
 /* Testimonial Ends */
 .contact--section {
   display: flex;
