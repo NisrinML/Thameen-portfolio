@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import data from "../../data/index.json";
 export default function AboutMe() {
 const variants = {
     initial: {
@@ -16,12 +17,20 @@ const variants = {
     }
 }
   const ref = useRef()
+  const [about,setAbout]=useState(data.about[0])
+  var currentIndex=-1;
+  const getNextValue=(array)=> {
+  if (array.length === 0) return null; 
+  currentIndex = (currentIndex + 1) % array.length;
+  setAbout(array[currentIndex]);
+  console.log(currentIndex)
+}
   return (
     <motion.section id="AboutMe" className="about--section" 
     variants={variants} ref={ref} initial="initial" whileInView="animate">
       <motion.div  variants={variants}
       className="about--section--img">
-        <img src="./img/about-me.png" alt="About Me" />
+        <img src={about.img} alt="About Me" />
       </motion.div>
       <motion.div  variants={variants}
       className="hero--section--content--box about--section--box">
@@ -29,13 +38,16 @@ const variants = {
           <p className="section--title">About</p>
           <h1 className="skills--section--heading">About Me</h1>
           <p className="hero--section-description">
-           Software Engineer specializing in WordPress development, data analysis, and machine learning.
-           I build responsive, user-centric web solutions while leveraging data-driven insights to create impactful applications. 
-        
-             Passionate about merging technical expertise with innovation to solve real-world problems and deliver measurable results.
-              Always exploring cutting-edge technologies to drive meaningful solutions.
+          {about.text}
           </p>
         </div>
+      </motion.div>
+         <motion.div  variants={variants} onClick={()=>getNextValue(data.about)}
+      className="about--section--arrow">
+        <svg width="28" height="46" viewBox="0 0 28 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 43L25 23L3 3" stroke="#006B6A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
       </motion.div>
     </motion.section>
   );

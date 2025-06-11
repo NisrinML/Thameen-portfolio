@@ -1,18 +1,35 @@
+import { useRef } from "react";
 import data from "../../data/index.json";
-
-export default function Testimonial() {
+import {motion} from 'framer-motion'
+export default function Expertises() {
+  const variants = {
+      initial: {
+          x: +500,
+          opacity: 0
+      },
+      animate: {
+          x: 0,
+          opacity: 1,
+          transition: {
+              duration: 0.8,
+              staggerChildren: 0.5
+          }
+      }
+  }
+      const ref=useRef()
   return (
-    <section className="testimonial--section" id="testimonial">
-      <div className="portfolio--container-box">
-        <div className="portfolio--container">
-          <p className="sub--title">Clients Feedback</p>
-          <h2 className="sections--heading">Customer Feedback</h2>
+    <motion.section className="testimonial--section" id="myExpertises"  
+    variants={variants} ref={ref} initial="initial" whileInView="animate">
+      <motion.div className="portfolio--container-box" variants={variants}>
+        <div className="portfolio--container" >
+          <p className="sub--title">My Expertises</p>
+          <h2 className="section--heading skills--section--heading">Work Experiences</h2>
         </div>
-      </div>
-      <div className="portfolio--section--container">
+      </motion.div>
+      <motion.div className="portfolio--section--container" variants={variants}>
         {data?.testimonial?.map((item, index) => (
           <div key={index} className="testimonial--section--card">
-            <div className="testimonial--section--card--review">
+            {/* <div className="testimonial--section--card--review">
               {Array.from({ length: 5 }, (reviews, index) => (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +44,7 @@ export default function Testimonial() {
                   />
                 </svg>
               ))}
-            </div>
+            </div> */}
             <p className="text-md">{item.description}</p>
             <div className="testimonial--section--card--author--detail">
               <img src={item.src} alt="Avatar" />
@@ -42,7 +59,7 @@ export default function Testimonial() {
             </div>
           </div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }

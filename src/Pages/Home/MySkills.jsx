@@ -22,7 +22,7 @@ const variants = {
     initial="initial" whileInView="animate">
       <motion.div className="portfolio--container" variants={variants}>
         <p className="section--title">My Skills</p>
-        <h1 className="skills--section--heading">My Expertise</h1>
+        <h1 className="skills--section--heading">My Skills</h1>
       </motion.div>
       <motion.div className="skills--section--container"  variants={variants}>
         {data?.skills?.map((item, index) => (

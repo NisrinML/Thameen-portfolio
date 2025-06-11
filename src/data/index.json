@@ -88,26 +88,38 @@
     {
       "id": "1",
       "count": "5",
-      "src": "./img/avatar-image.png",
+      "src": "./img/image-1.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Dianne Russel",
-      "author_designation": "Starbucks"
+      "author_name": "Hnndes",
+      "author_designation": "Software company"
     },
     {
       "id": "2",
       "count": "5",
-      "src": "./img/avatar-image-1.png",
+      "src": "./img/avatar-image.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kristin Watson",
-      "author_designation": "Louis Vuitton"
+      "author_name": "Al-Rajaa",
+      "author_designation": "Community organization"
     },
     {
       "id": "3",
       "count": "5",
-      "src": "./img/avatar-image-2.png",
+      "src": "./img/image-3.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kathryn Murphy",
-      "author_designation": "McDonald's"
+      "author_name": "MTN",
+      "author_designation": "Mobile telecommunications company"
+    }
+  ],
+  "about":[
+    {
+     "id":"1",
+     "img":"./img/about-me.png",
+     "text":" Software Engineer specializing in WordPress development, data analysis, and machine learning.I build responsive, user-centric web solutions while leveraging data-driven insights to create impactful applications. Passionate about merging technical expertise with innovation to solve real-world problems and deliver measurable results. Always exploring cutting-edge technologies to drive meaningful solutions."
+    },
+     {
+     "id":"2",
+     "img":"./img/scout.png",
+     "text":"Scout Chief, having guided a group of over 100 members for more than four years, demonstrating strong leadership and organizational skills. I am also a passionate musician, playing the trumpet with dedication and skill for over ten years. My commitment to both community leadership and musical artistry reflects my well-rounded, disciplined, and talented nature."
     }
   ]
 }

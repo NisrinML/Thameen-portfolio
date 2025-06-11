@@ -20,6 +20,19 @@ function Footer() {
                 Home
               </Link>
             </li>
+              <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="mySkills"
+                className="text-md"
+              >
+                      Skills
+              </Link>
+            </li>
             <li>
               <Link
                 activeClass="navbar--active-content"
@@ -46,7 +59,19 @@ function Footer() {
                 Portfolio
               </Link>
             </li>
-
+  <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="myExpertises"
+                className="text-md"
+              >
+               Work Experiences
+              </Link>
+            </li>
             <li>
               <Link
                 activeClass="navbar--active-content"
