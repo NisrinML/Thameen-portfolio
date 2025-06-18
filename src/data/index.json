@@ -27,20 +27,20 @@
   ],
   "portfolio": [
       {
+      "id": "8",
+      "src": "./img/alsebaie.png",
+      "title": "Al-Sebaie",
+      "description": "WordPress site built with Elementor & Royal Addons, featuring responsive Figma design. Used CPT UI + ACF for dynamic content, MetForms for forms, and Polylang for multilingual support.",
+      "link": "Visit Website",
+      "path":"https://alsebaie.com/"
+    },
+      {
       "id": "1",
       "src": "./img/memary.png",
       "title": "Memari",
       "description": "WordPress site built with Elementor & Royal Addons, featuring responsive Figma design. Used CPT UI + ACF for dynamic content, MetForms for forms, and Polylang for multilingual support.",
       "link": "Visit Website",
       "path":"https://memari-consulting.de/home/"
-    },
-    {
-      "id": "2",
-      "src": "./img/tagespflege.png",
-      "title": "Tagespflege St. Agnes GmbH",
-      "description": "WordPress site for Seligenstadt elderly day care (2026) built with Elementor PRO, MetForm, and CCM19 for GDPR compliance.",
-      "link": "Visit Website",
-      "path":"https://tagespflege-seligenstadt.de/"
     },
     {
       "id": "3",
@@ -73,6 +73,14 @@
       "description": "Built with Elementor for responsive design, MetForm for contact forms, and Complianz/CCM19 for GDPR compliance. Secured with Really Simple SSL for safe browsing.",
       "link": "Visit Website",
       "path":"https://kahlgrunder-pflegedienst.de/"
+    },
+    {
+      "id": "2",
+      "src": "./img/tagespflege.png",
+      "title": "Tagespflege St. Agnes GmbH",
+      "description": "WordPress site for Seligenstadt elderly day care (2026) built with Elementor PRO, MetForm, and CCM19 for GDPR compliance.",
+      "link": "Visit Website",
+      "path":"https://tagespflege-seligenstadt.de/"
     },
     {
       "id": "7",
@@ -126,11 +134,13 @@
     {
      "id":"1",
      "img":"./img/about-me.png",
+     "title":"Software Engineer",
      "text":" Software Engineer specializing in WordPress development, data analysis, and machine learning.I build responsive, user-centric web solutions while leveraging data-driven insights to create impactful applications. Passionate about merging technical expertise with innovation to solve real-world problems and deliver measurable results. Always exploring cutting-edge technologies to drive meaningful solutions."
     },
      {
      "id":"2",
      "img":"./img/scout.png",
+     "title":"Scout Chief",
      "text":"Scout Chief, having guided a group of over 100 members for more than four years, demonstrating strong leadership and organizational skills. I am also a passionate musician, playing the trumpet with dedication and skill for over ten years. My commitment to both community leadership and musical artistry reflects my well-rounded, disciplined, and talented nature."
     }
   ]
