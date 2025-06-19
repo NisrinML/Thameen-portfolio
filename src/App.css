@@ -840,8 +840,12 @@ input[type="checkbox"] {
     padding-top: 0;
     padding-bottom: 0;
   }
-.testimonial--section {
-  
+  .navbar{
+    padding: 15px 40px;
+  }
+.testimonial--section,
+.about--section 
+ {
   padding: 112px 40px;
   align-items: center;
 }
