@@ -117,7 +117,7 @@ function Navbar() {
               Portfolio
             </Link>
           </li>
-<li>
+          <li>
             <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"

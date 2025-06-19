@@ -775,10 +775,12 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 1200px) {
-  .btn-outline-primary {
-    display: none;
+.navbar:not(.active) .btn-outline-primary {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease-in-out 0.2s, visibility 0.4s ease-in-out 0.2s;
   }
-
+ 
   .hero--section {
     display: flex;
     flex-direction: column-reverse;
@@ -801,10 +803,18 @@ input[type="checkbox"] {
     flex-direction: column;
   }
 
-  /* .portfolio--section--container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  } */
+  .portfolio--section--container{
+    display: flex;
+    flex-direction: column;
+  }
+ .portfolio--section {
+  padding: 112px 40px;
+  align-items:center;
+  gap: 80px;
+}
+.portfolio--section--card--content{
+  align-items: center ;
+}
   .skills--section,
   .portfolio--container,
   .hero--section--content,
@@ -830,9 +840,17 @@ input[type="checkbox"] {
     padding-top: 0;
     padding-bottom: 0;
   }
-
+.testimonial--section {
+  
+  padding: 112px 40px;
+  align-items: center;
+}
   .testimonial--section--card {
     padding: 25px;
+    text-align: center;
+  }
+  .testimonial--section--card--content{
+    text-align: left;
   }
 
   .hero--section--title,
@@ -841,11 +859,48 @@ input[type="checkbox"] {
     font-size: 35px;
     line-height: 40px;
   }
-
-  .hero--section--content--box {
-    gap: 10px;
+  .skills--section {
+    padding: 50px 20px !important;
+    gap: 40px !important;
   }
 
+  .skills--section--container {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .skills--section--card {
+    width: 90% !important;
+    height: auto !important;
+    padding: 20px !important;
+    gap: 20px !important;
+  }
+
+  .skills--section--heading {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+
+  .section--title {
+    justify-content: center !important;
+  }
+  .hero--section--content--box {
+    gap: 10px;
+     align-items: center; /* Center all child elements horizontally */
+    text-align: center; 
+  }
+  .hero--section--content--box > .btn{
+   align-self:center;
+    align-self: center; /* Specifically center the button */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about--section--arrow > svg{
+    width:20px;
+    height:35px;
+  }
   .contact--form--container {
     width: 100%;
   }
@@ -855,7 +910,12 @@ input[type="checkbox"] {
     flex-direction: column;
     gap: 10px;
   }
+  .phoneSvg > svg{
+                   
+                  width: 250px;
+                  height: 300px;
 
+                }
   .footer--social--icon>ul,
   .footer--items>ul {
     padding: 0;
@@ -893,6 +953,11 @@ input[type="checkbox"] {
   .nav__hamburger {
     display: flex;
     z-index: 200;
+      position: relative; /* Add this */
+    top: auto; /* Remove absolute positioning */
+    right: auto; /* Remove absolute positioning */
+       margin-left: auto; /* This pushes it to the right */
+    order: 2;
   }
 
   .navbar--items {
@@ -905,7 +970,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255);
-    top: -20rem;
+    top: -100vh;
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
@@ -932,9 +997,16 @@ input[type="checkbox"] {
   }
 
   .navbar--items.active {
-    top: 30px;
+    top: 0;
   }
-
+  .btn-outline-primary {
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  }
+  .navbar.active .btn-outline-primary {
+       opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  }
   .nav__hamburger.active :nth-child(1) {
     transform: rotate(45deg) translate(0.45rem, 0.1875rem);
   }
@@ -946,6 +1018,7 @@ input[type="checkbox"] {
   .nav__hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
+ 
 }
 
 /* Responsive Screens Ends*/

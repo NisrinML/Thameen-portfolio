@@ -1,42 +1,40 @@
 import { useRef } from "react";
 import data from "../../data/index.json";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 export default function MySkills() {
-const variants = {
-    initial: {
-        x: -500,
-        opacity: 0
-    },
-    animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            duration: 0.8,
-            staggerChildren: 0.5
-        }
-    }
-}
-    const ref=useRef()
   return (
-    <motion.section className="skills--section" id="mySkills" variants={variants} ref={ref}
-    initial="initial" whileInView="animate">
-      <motion.div className="portfolio--container" variants={variants}>
+    <motion.section
+      className="skills--section"
+      id="mySkills"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+      transition={{ duration: 1 }}
+    >
+      <div className="portfolio--container">
         <p className="section--title">My Skills</p>
         <h1 className="skills--section--heading">My Skills</h1>
-      </motion.div>
-      <motion.div className="skills--section--container"  variants={variants}>
+      </div>
+      <div className="skills--section--container">
         {data?.skills?.map((item, index) => (
-          <div key={index} className="skills--section--card"  >
-            <div className="skills--section--img" >
+          <motion.div 
+            key={index}
+            className="skills--section--card"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.3 }}
+          >
+            <div className="skills--section--img">
               <img src={item.src} alt="Product Chain" />
             </div>
-            <div className="skills--section--card--content" >
-              <h3 className="skills--section--title" >{item.title}</h3>
+            <div className="skills--section--card--content">
+              <h3 className="skills--section--title">{item.title}</h3>
               <p className="skills--section--description">{item.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
     </motion.section>
   );
 }

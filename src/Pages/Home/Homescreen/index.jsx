@@ -8,7 +8,7 @@ import Expertises from "../Expertises";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <HeroSection />
       <MySkills />
       <AboutMe />
@@ -16,6 +16,6 @@ export default function Home() {
       <Expertises />
       <ContactMe />
       <Footer />
-    </>
+    </div>
   );
 }
